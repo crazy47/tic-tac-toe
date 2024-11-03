@@ -1,0 +1,116 @@
+* {
+    color: aliceblue;
+}
+body {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0;
+    padding: 0;
+    overflow: hidden; /* Prevent scrolling */
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 2em; /* Adjust the gap size as needed */
+}
+
+.title {
+    font-family: "Barrio", system-ui;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 5em;
+    text-align: center;
+    color: rgb(255, 255, 255);
+
+}
+.board {
+    max-width: 50px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "one two three"
+    "four five six"
+    "seven eight nine";
+}
+.cell {
+    padding: 1rem;
+    text-align: center;
+    font-size: 5em;
+    font-family: "Barrio", system-ui;
+    font-weight: 100px;
+    width: 105px;
+    height: 100px;
+    cursor: pointer;
+}
+.one {
+    border-right: 2px solid rgba(255, 255, 255, 0.424);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.424);
+    grid-area: one;
+}
+.two {
+    border-right: 2px solid rgba(255, 255, 255, 0.424);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.424);
+    grid-area: two;
+}
+.three {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.424);
+    grid-area: three;
+}
+.four {
+    border-right: 2px solid rgba(255, 255, 255, 0.424);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.424);
+    grid-area: four;
+}
+.five {
+    border-right: 2px solid rgba(255, 255, 255, 0.424);
+    border-bottom: 2px solid rgba(255, 255, 255, 0.424);
+    grid-area: five;
+}
+.six {
+    border-bottom: 2px solid rgba(255, 255, 255, 0.424);
+    grid-area: six;
+}
+.seven {
+    border-right: 2px solid rgba(255, 255, 255, 0.424);
+    grid-area: seven;
+}
+.eight {
+    border-right: 2px solid rgba(255, 255, 255, 0.424);
+    grid-area: eight;
+}
+.nine {
+    grid-area: nine;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    gap: 1em;
+}
+.stats div {
+    font-size: 1.5em;
+    font-family: "Itim", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+#player_wins {
+    color: green;
+}
+#opponent_wins {
+    color: rgb(218, 40, 0);
+}
+#tie_occurence {
+    color: rgb(255, 255, 0);
+}
+h1 {
+    font-family: "Barrio", system-ui;
+    font-weight: 100;
+    font-style: normal;
+    text-align: center;
+    color: rgb(23, 88, 152);
+}
