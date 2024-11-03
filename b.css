@@ -114,3 +114,12 @@ h1 {
     text-align: center;
     color: rgb(23, 88, 152);
 }
+#btn {
+    display: none;
+    align-self: center;
+    width: 80px;
+    background-color: aqua;
+    padding: 10px;
+    border-radius: 1rem;
+    color: black;
+}
