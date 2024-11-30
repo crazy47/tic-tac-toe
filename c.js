@@ -3,8 +3,9 @@ const statusText = document.querySelector('#status');
 let playerScore = document.getElementById('player_wins');
 let opponentScore = document.getElementById('opponent_wins');
 let tieScore = document.getElementById('tie_occurence');
-var winAudio = new Audio('C:/Users/erjan/Desktop/javascript practice/tictactoe/audios/game-over-arcade-6435.mp3'); // Use a relative path
-var loseAudio = new Audio('C:/Users/erjan/Desktop/javascript practice/tictactoe/audios/marimba-lose-250960.mp3');
+var winAudio = new Audio('./audios/game-over-arcade-6435.mp3'); // relative path para ma sama ng vercel
+var loseAudio = new Audio('./audios/marimba-lose-250960.mp3');
+
 const restartButton = document.getElementById('btn');
 // conditions
 const conditions = [
